@@ -1,0 +1,179 @@
+/* style for all tasks */
+
+body {
+	background-color: gray;
+	width: 1850px;
+	height: 950px;
+	margin: 0 auto;
+}
+
+.topCorner {
+	margin: 15px auto;
+	font-family: Calibri, Arial, Helvetica;
+	font-size: 24px;
+	text-align: left;
+}
+
+
+#trialCounter {
+	display: block;
+	visibility: hidden;
+}
+
+.instructions {
+	width: 800px;
+	margin: 0 auto;
+	font-family: Calibri, Arial, Helvetica;
+	font-size: 18px;
+	text-align: center;
+	display: none;
+
+}
+
+
+/* buttons to advance sections */
+button {
+	font-size: 24px;
+	font-family: Calibri, Arial, Helvetica;
+	margin: 10px auto;
+	display:block;
+	user-select: none;
+	cursor: pointer; /* Pointer/hand icon */
+
+}
+
+
+/* synonyms styles */
+
+#taskInstructions {
+	font-size: 24px;
+	font-family: Calibri, Arial, Helvetica;
+	text-align: center;
+	margin: 25px 0;
+}
+
+#buttonContainer {
+	width: 798px;
+	margin: auto;
+}
+
+#buttons {
+	margin:0px auto 0px auto;
+	height: 150px;
+	display:none;
+}
+
+
+#buttons div {
+	font-size: 24px;
+	font-family: Calibri, Arial, Helvetica;
+	text-align: center;
+	margin: 30px 0;
+}
+
+#buttons button {
+	width: 216px;
+	padding: 10px 24px;
+    background-color: white;
+    /*position: relative;*/
+    border: 1px solid black;
+    float: left; /* Float the buttons side by side */
+    margin: 0 25px;
+}
+
+/* memory experiment styles */
+
+
+
+#confContainer, #famOptions {
+	width: 1000px;
+}
+
+.confButtons {
+	margin:80px auto 0px auto;
+	height: 150px;
+	display:none;
+}
+
+.confButtons div {
+	font-size: 24px;
+	font-family: Calibri, Arial, Helvetica;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.confButtons button {
+	width: 200px;
+	height:109px;
+	padding: 10px 24px;
+    background-color: white;
+    border: 1px solid black;
+    float: left; /* Float the buttons side by side */
+    margin: 0 25px;
+}
+
+
+
+/* image size and location */
+.stim {
+	width: 100px;
+	height: 100px;
+	display: block;
+	user-select: none;
+	position: absolute;
+	bottom: 0px;
+	cursor: pointer; /* Pointer/hand icon */
+
+}
+
+/* image size and location */
+#famImg {
+	width: 200px;
+	height: 200px;
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+	user-select: none;
+	bottom: 0px;
+	cursor: pointer; /* Pointer/hand icon */
+
+}
+
+/* dot showing target location */
+.dot {
+	height: 10px;
+	width: 10px;
+	background-color: red;
+	border-radius: 50%;
+	position: absolute; 
+}
+
+/* space encompassing all memory locations; originally 600 x 1200 but now 800 by 1600 */
+#locationBounds {
+	height: 800px;
+	width: 1600px;
+	background-color: white;
+	position: relative;
+	border: 5px solid black;
+	margin: 0 auto;
+	overflow: hidden; /* for consent form */
+	background-size: 50px 50px;
+	background-image: linear-gradient(to right, #dce1e2 1px, transparent 1px), 
+					  linear-gradient(to bottom, #dce1e2 1px, transparent 1px);
+}
+
+/* for instructions that show up in grid */
+#locationBounds .instructions {
+	background-color: white;
+	padding: 10px;
+	margin: 30px auto;
+
+}
+
+/* space where the trials start */
+#startBounds {
+	height: 850px;
+	width: 1610px;
+	position: relative;
+	margin: 0 auto;
+}
